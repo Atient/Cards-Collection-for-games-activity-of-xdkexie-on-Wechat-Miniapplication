@@ -1,0 +1,57 @@
+<scroll-view class='page'>
+
+  <view class="title-box">
+    <text class="title-text">{{titletext}}</text>
+    <text class="owner-text">{{ownertext}}</text>
+    <button class='show-button' bindtap='tapShowButton'>{{showtext}}</button>
+  </view>
+
+  <view class='{{ruleshow?"modal-show":"modal-hide"}}' bindtap='tapHide'>
+    <text class='rule-title'>{{ruletitle}}</text>
+    <text class='rule-text'>{{rule}}</text>
+    <text class='remind-text'>{{remindtext}}</text>
+  </view>
+
+  <view class='{{successshow?"success-show":"modal-hide"}}'>
+    <text class='success-title'>{{successtitle}}</text>
+    <text class="total">{{totaltext}}:{{imgtotal}}</text>
+    <button class='confirm-button' bindtap='tapClose'>{{confirmbutton}}</button>
+  </view>
+
+  <view class='puzzle-box'>
+  <!--美化外框-->
+      <!--头部-->
+      <image class="puzzle-item1" src="{{imgs[1].Url}}"></image>
+
+      <!--身体和两臂-->
+      <view class="puzzle-flex-row1">
+        <!--左臂-->
+        <image class="puzzle-item2" src="{{imgs[2].Url}}"></image>
+        <!--身体-->
+        <image class="puzzle-item3" src="{{imgs[3].Url}}"></image>
+        <!--右臂-->
+        <image class="puzzle-item2" src="{{imgs[4].Url}}"></image>
+      </view>
+
+      <!--双腿-->
+      <view class="puzzle-flex-row2">
+        <!--左腿-->
+        <image class="puzzle-item4" src="{{imgs[5].Url}}"></image>
+        <!--右腿-->
+        <image class="puzzle-item4" src="{{imgs[6].Url}}"></image>
+      </view>
+  </view>
+
+  <view class='button-group'>
+    <button class = "scan-button" 
+            bindtap="tapSwitchButton">
+            {{buttontext}}
+    </button>
+
+    <button class = "gift-button" 
+            bindtap="tapGiftButton"
+            style='background-color:{{giftbuttoncolor}}'>
+            {{gifttext}}
+    </button>
+  </view>
+</scroll-view>

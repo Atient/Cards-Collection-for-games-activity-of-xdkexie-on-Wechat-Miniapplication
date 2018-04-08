@@ -1,0 +1,24 @@
+<view class="page" >
+  <!--page-choose-card-->
+  
+  <!--title-->
+  <view class="title-box">
+    <text class="title-text">{{titletext}}</text>
+    <text class="owner-text">{{ownertext}}</text>
+  </view>
+
+  <!--choose-card-button-->
+  <view class="card-container">
+    <image  class='card1' src="{{card1Url}}" bindtap='tapCard1'>
+    </image>
+
+    <image class='card2' src="{{card2Url}}" bindtap='tapCard2'>
+    </image>
+
+  </view>
+
+  <!--confirm-button-->
+  <button class="confirm-button" bindtap='tapConfirmButton'>
+  确认
+  </button>
+</view>

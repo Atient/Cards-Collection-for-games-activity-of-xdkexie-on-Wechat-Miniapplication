@@ -1,0 +1,7 @@
+<scroll-view class = "page" >
+    <view class="icon-box">
+        <image class="icon" src="{{iconUrl}}"></image>
+
+        <text class='text'>{{text}}</text>
+    </view>
+</scroll-view>

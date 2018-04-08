@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/team/team",
+    "pages/main/main"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "科技游园会",
+    "navigationBarTextStyle":"black"
+  }
+}
